@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Read Table Entries</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZWXXU_READ_TABLETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZWXXU_READ_TABLE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_WXXU_RFC_READ_MULT_TABLE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Read Table Entries</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_TABLE_PARAMS</PARAMETER>
+       <TYP>ZWTXXU_TABLE_PARAMS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_JOIN_COND</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZWTXXU_TABLE_JOIN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DISTINCT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BOOLEAN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_MESSAGES</PARAMETER>
+       <TYP>ZWTXXU_MESSAGES</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_COUNT</PARAMETER>
+       <TYP>I</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_TABLE_PARAMS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Parameters</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_JOIN_COND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Join Condition</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DISTINCT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Boolean Variable (X=True, -=False, Space=Unknown)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_MESSAGES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for message return</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_COUNT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
